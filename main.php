@@ -27,3 +27,9 @@ if ($err) {
 	echo $response;
 }
 
+<form method="post">
+  <input type="text" name="url" maxlength="2000"/>
+  <input type="submit" name="submit" value="download" />
+
+</form>
+<?php if (isset($url)) { $obj->download_file($url);} ?>
