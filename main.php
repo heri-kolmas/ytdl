@@ -28,8 +28,8 @@ if ($err) {
 }
 
 <form method="post">
-  <input type="text" name="url" maxlength="2000"/>
+  <input type="text" name="$err" maxlength="2000"/>
   <input type="submit" name="submit" value="download" />
 
 </form>
-<?php if (isset($url)) { $obj->download_file($url);} ?>
+<?php if (isset($err)) { $obj->download_file($err);} ?>
